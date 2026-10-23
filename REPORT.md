@@ -129,7 +129,7 @@ I noticed that graphs with more edges usually had smaller MST weights. This make
 
 I also compared the number of weight comparisons in Kruskal and Prim.
 
-![MST operations](plots/mst_operations.png)
+![MST operations](results/plots/mst_operations.png)
 
 On the largest dense graph, Prim made more comparisons than Kruskal.
 
@@ -143,7 +143,7 @@ Kosaraju also scans `2m` edges because it uses two DFS passes.
 
 Kahn and DAG shortest paths scan `m` edges.
 
-![Edge scans](plots/edge_scans.png)
+![Edge scans](results/plots/edge_scans.png)
 
 The graph shows that the number of edge scans increases when the number of edges increases.
 
@@ -151,7 +151,7 @@ The graph shows that the number of edge scans increases when the number of edges
 
 I also counted DSU operations in Kruskal.
 
-![DSU operations](plots/dsu_operations.png)
+![DSU operations](results/plots/dsu_operations.png)
 
 For the largest graph with 100,000 vertices and 2,000,000 edges, Kruskal performed 8,050,819 DSU operations.
 

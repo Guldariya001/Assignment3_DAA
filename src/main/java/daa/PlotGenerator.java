@@ -20,21 +20,21 @@ public class PlotGenerator {
     public static void main(String[] args) throws Exception {
         List<Row> rows = readCsv("results/results.csv");
 
-        Files.createDirectories(Path.of("plots"));
+        Files.createDirectories(Path.of("results/plots"));
 
         draw(rows, "MST: weight comparisons",
-                "comparisons", "plots/mst_operations.png",
+                "comparisons", "results/plots/mst_operations.png",
                 List.of("Kruskal", "Prim"));
 
         draw(rows, "Edge scans",
-                "scans", "plots/edge_scans.png",
+                "scans", "results/plots/edge_scans.png",
                 List.of("Kruskal", "Prim", "Kosaraju", "Kahn", "DagShortestPath"));
 
         draw(rows, "DSU operations in Kruskal",
-                "dsu", "plots/dsu_operations.png",
+                "dsu", "results/plots/dsu_operations.png",
                 List.of("Kruskal"));
 
-        System.out.println("Done: 3 PNG files in plots/");
+        System.out.println("Done: 3 PNG files in results/plots/");
     }
 
     static List<Row> readCsv(String file) throws IOException {

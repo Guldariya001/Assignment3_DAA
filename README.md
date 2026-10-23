@@ -45,11 +45,10 @@ data/
 
 results/
     results.csv
-
-plots/
-    mst_operations.png
-    edge_scans.png
-    dsu_operations.png
+    plots/
+        mst_operations.png
+        edge_scans.png
+        dsu_operations.png
 
 pom.xml
 README.md
